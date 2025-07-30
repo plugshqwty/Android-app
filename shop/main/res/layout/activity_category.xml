@@ -1,0 +1,65 @@
+<androidx.drawerlayout.widget.DrawerLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/drawer_layout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <!-- Ваш Toolbar -->
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/toolbarCat"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="#DEDEDE" />
+
+        <!-- Ваш текущий контент, например, заголовок и RecyclerView -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="16dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/inter_bold"
+                android:textColor="#201E28"
+                android:textSize="25sp"
+                android:layout_marginHorizontal="30dp"
+                android:textStyle="bold"
+                android:text="Goods" />
+
+            <Button
+                android:id="@+id/basket_button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFBB02"
+                android:layout_marginHorizontal="10dp"
+                android:textColor="#201E28"
+                android:text="Shop basket" />
+
+            <Button
+                android:id="@+id/button_login1"
+                android:layout_width="wrap_content"
+                android:paddingHorizontal="15dp"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#FFBB02"
+                android:textColor="#201E28"
+                android:text="My account" />
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/itemsListCat"
+            android:layout_marginVertical="20dp"
+            android:layout_marginHorizontal="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" />
+    </LinearLayout>
+
+</androidx.drawerlayout.widget.DrawerLayout>

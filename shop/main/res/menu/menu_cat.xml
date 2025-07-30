@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group >
+        <item android:title="Headphones"
+            android:id="@+id/pods"/>
+        <item android:title="Watch"
+            android:id="@+id/watch"/>
+        <item android:title="Hairdryers"
+            android:id="@+id/hairdr"/>
+        <item android:title="Chargers/Powerbanks"
+            android:id="@+id/charge"/>
+        <item android:title="Accessories"
+            android:id="@+id/accsess"/>
+    </group>
+</menu>

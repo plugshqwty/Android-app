@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_settings1"
+        android:title="Наушники" />
+    <item
+        android:id="@+id/save_settings2"
+        android:title="Часы" />
+    <item
+        android:id="@+id/open_settings3"
+        android:title="Телефоны" />
+</menu>
